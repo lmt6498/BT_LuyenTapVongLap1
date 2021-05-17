@@ -14,18 +14,19 @@
         let randomNum;
         if (area) {
             randomNum = Math.floor(Math.random() * area);
-            if(randomNum == num){
+            if (randomNum == num) {
                 alert("Bạn thật may mắn. Đoán trúng ngay lần đầu tiên :))");
-            }else{
-                while (randomNum > num || randomNum <num){
-                    if(randomNum > num) {
+            } else {
+                while (randomNum > num || randomNum < num) {
+                    if (randomNum > num) {
                         alert("Số bạn đoán bé hơn số cần tìm");
                         num = Number(prompt("Đoán lại nào: "));
-                    }else if (randomNum < num) {
+                    } else if (randomNum < num) {
                         alert("Số bạn đoán lớn hơn số cần tìm");
                         num = Number(prompt("Đoán lại nào: "));
                     }
-                }alert("Bạn đoán đúng rồi!");
+                }
+                alert("Bạn đoán đúng rồi!");
             }
         }
     }
