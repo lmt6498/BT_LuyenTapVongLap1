@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+  let count = 0;
+  let tong = 0;
+  for (let i = 1;;i++){
+    if(i%7==0){
+      tong+=i;
+      count++;
+      if(count==30)
+        break;
+
+    }
+  }
+  document.write("Tổng 30 chữ số đầu chia hết cho 7 là: "+tong);
+</script>
+</body>
+</html>
